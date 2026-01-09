@@ -1,0 +1,111 @@
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1649357585015-179ed98f513d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3YXRjaGVzJTIwaGVyb3xlbnwxfHx8fDE3NjY3NTMxODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 180px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.special-offer {
+  position: relative;
+  z-index: 1;
+  background: #ff6600;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Men's Button - Solid Orange */
+.hero-buttons button:first-child {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+}
+
+.hero-buttons button:first-child:hover {
+  background: #e65c00;
+  transform: translateY(-2px);
+}
+
+/* Women's Button - Transparent with Thick White Border */
+.hero-buttons button:last-child {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff; /* Thick white border */
+  backdrop-filter: blur(4px); /* Optional subtle glass effect */
+}
+
+.hero-buttons button:last-child:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-buttons button {
+    width: 80%;
+    max-width: 300px;
+  }
+}

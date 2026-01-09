@@ -1,0 +1,33 @@
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: rotate(2deg); /* Slight rotate for fun */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}

@@ -1,0 +1,69 @@
+.category-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center; /* Perfectly center the cards */
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Responsive: stack on small screens */
+}
+
+.category-card {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent 70%);
+  color: #fff;
+  padding: 100px 40px 40px;
+  text-align: center;
+  transition: background 0.4s ease;
+}
+
+.category-card:hover .overlay-text {
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent 60%);
+}
+
+.overlay-text button {
+  background: #ff6600;
+  color: #fff;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.overlay-text button:hover {
+  transform: scale(1.05);
+}

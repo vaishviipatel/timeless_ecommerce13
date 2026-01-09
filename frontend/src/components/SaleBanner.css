@@ -1,0 +1,77 @@
+.sale-banner {
+    background: linear-gradient(rgba(255, 102, 0, 0.85), rgba(255, 102, 0, 0.85)),
+              url('https://lux-life.digital/wp-content/uploads/2021/06/Watch.jpg');
+  background-size: cover;
+  background-position: center;
+
+  background-color: #d2691e;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sale-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.sale-banner:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sale-text h2 {
+  font-size: 36px;
+}
+
+.countdown {
+  display: flex;
+  gap: 10px;
+}
+
+.countdown div {
+  background-color: #fff;
+  color: #d2691e;
+  padding: 10px;
+  border-radius: 5px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+.sale-img img {
+  width: 200px;
+  transition: transform 0.5s;
+}
+
+.sale-img:hover img {
+  transform: scale(1.1);
+}
+.sale-img {
+  position: relative;
+}
+
+.sale-img::after {
+  content: '40% OFF';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+}

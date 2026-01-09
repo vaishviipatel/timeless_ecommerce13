@@ -1,0 +1,25 @@
+.footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  text-align: left;
+  margin: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  transition: color 0.3s;
+}
+
+.footer-column li:hover {
+  color: #ffa500;
+}

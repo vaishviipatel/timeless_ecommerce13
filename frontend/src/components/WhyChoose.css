@@ -1,0 +1,31 @@
+.why-choose {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.why-item {
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s;
+}
+
+.why-item:hover {
+  transform: scale(1.1);
+}
+
+.why-item img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.5s;
+}
+
+.why-item:hover img {
+  transform: rotate(360deg); /* Fun rotate animation */
+}

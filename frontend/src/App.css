@@ -1,0 +1,309 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #d2691e;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.search {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login, .cart {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background-image: url('https://media.istockphoto.com/id/1313436134/photo/woman-wearing-luxury-wristwatch-closeup-of-hand.jpg?s=612x612&w=0&k=20&c=CLMVCezKRQrTgoPDT1HYpdMtIB4wzU4Q2v7yzDLwjNc=');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero-buttons button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Category */
+.category-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category-card button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Featured */
+.featured-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Why Choose */
+.why-choose {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.why-item {
+  text-align: center;
+  width: 150px;
+}
+
+.why-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* New Arrivals */
+.new-arrivals {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.new-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Sale Banner */
+.sale-banner {
+  background-color: #d2691e;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-text h2 {
+  font-size: 36px;
+}
+
+.countdown {
+  display: flex;
+  gap: 10px;
+}
+
+.countdown div {
+  background-color: #fff;
+  color: #d2691e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sale-img img {
+  width: 200px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f8ff;
+}
+
+.about button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.test-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.test-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #001f3f;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Footer */
+.footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column {
+  text-align: left;
+}

@@ -1,0 +1,232 @@
+.featured-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* New wrapper for centering */
+.featured-grid-wrapper {
+  max-width: 1400px; /* Adjust as needed – prevents over-stretching on wide screens */
+  margin: 0 auto; /* Centers the wrapper horizontally */
+  overflow: hidden; /* Contains the scrollable grid */
+}
+
+.featured-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center; /* This is the key: centers cards when they fit */
+  flex-wrap: nowrap; /* Keeps it as a single row carousel */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Ensures scrolling works but hides scrollbar */
+.featured-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* When screen is small, it will naturally scroll from left */
+@media (max-width: 1200px) {
+  .featured-grid {
+    justify-content: flex-start; /* Optional: left-align on small screens for better scrolling */
+  }
+}
+
+/* Product Card - keeping the reduced size from before */
+.product-card {
+  flex: 0 0 280px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px; /* Matches card width for square proportion */
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures consistent cropping */
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.best-seller-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff6600;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.card-content {
+  padding: 24px;
+  text-align: left;
+}
+
+.category {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.stars {
+  font-size: 18px;
+  color: #ff9900;
+}
+
+.rating-text {
+  font-size: 15px;
+  color: #777;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6600;
+  margin: 18px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.add-to-cart {
+  flex: 1;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #e65c00;
+}
+
+.view-btn {
+  background: transparent;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-btn:hover {
+  border-color: #ff6600;
+  color: #ff6600;
+}
+
+/* Better Responsiveness */
+@media (max-width: 1024px) {
+  .product-card {
+    flex: 0 0 260px;
+  }
+  .image-wrapper {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 50px 15px;
+  }
+  
+  .featured-grid {
+    gap: 18px;
+  }
+  
+  .product-card {
+    flex: 0 0 240px; /* Even smaller on mobile */
+  }
+  
+  .image-wrapper {
+    height: 240px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .product-name {
+    font-size: 19px;
+  }
+  
+  .price {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 0 0 220px;
+  }
+  
+  .image-wrapper {
+    height: 220px;
+  }
+}

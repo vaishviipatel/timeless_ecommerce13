@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* TIMELESS Logo - Beautiful and unchanged */
+.logo a {
+  font-size: 36px;
+  font-weight: 900;
+  background: linear-gradient(to right, #ff8c00, #ff6600, #e65100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.logo a:hover {
+  text-shadow: 1px 1px 8px rgba(255, 102, 0, 0.5);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+/* Right Section - Only Search + Login */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* More breathing room without cart */
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding: 12px 20px 12px 48px;
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  background-color: #f8f8f8;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  border-color: #ff6600;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 19px;
+  pointer-events: none;
+}
+
+/* Login Button */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #e65c00;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+.user-icon {
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+  .header {
+    padding: 20px 40px;
+  }
+  .nav-links {
+    gap: 35px;
+  }
+  .search-input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-links {
+    gap: 25px;
+  }
+  .search-input {
+    width: 220px;
+  }
+}
