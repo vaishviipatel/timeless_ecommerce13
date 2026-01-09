@@ -44,5 +44,4 @@ The platform allows users to browse watches, view product details, and interact 
 
 ---
 
-## 📂 Project Structure
 
